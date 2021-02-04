@@ -30,6 +30,8 @@ import { AppMenuComponent } from './app.menu.component';
 import { AppConfigComponent } from './app.config.component';
 import { AppFooterComponent } from './app.footer.component';
 import { AppInputStyleSwitchModule } from './app.inputstyleswitch.component';
+import { AccountLoginModule } from '../account-login/account-login.module';
+import { AccountForgotPasswordModule } from '../account-forgot-password/account-forgot-password.module';
 
 @NgModule({
     declarations: [
@@ -45,6 +47,8 @@ import { AppInputStyleSwitchModule } from './app.inputstyleswitch.component';
         FormsModule,
         ReactiveFormsModule,
         AppRoutingModule,
+        AccountLoginModule,
+        AccountForgotPasswordModule,
         HttpClientModule,
         BrowserAnimationsModule,
         ButtonModule,
