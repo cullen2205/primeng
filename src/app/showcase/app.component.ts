@@ -27,23 +27,23 @@ export class AppComponent implements OnInit, OnDestroy {
     constructor(private router: Router, private configService: AppConfigService, private primengConfig: PrimeNGConfig) {}
 
     ngOnInit() {
-        this.primengConfig.ripple = true;
-        this.config = this.configService.config;
-        this.subscription = this.configService.configUpdate$.subscribe(config => this.config = config);
+        // this.primengConfig.ripple = true;
+        // this.config = this.configService.config;
+        // this.subscription = this.configService.configUpdate$.subscribe(config => this.config = config);
 
-        this.router.events.subscribe(event => {
-            if (event instanceof NavigationEnd) {
-                gtag('config', 'UA-93461466-1',
-                      {
-                        'page_path': '/primeng' + event.urlAfterRedirects
-                      }
-                );
+        // this.router.events.subscribe(event => {
+        //     if (event instanceof NavigationEnd) {
+        //         gtag('config', 'UA-93461466-1',
+        //               {
+        //                 'page_path': '/primeng' + event.urlAfterRedirects
+        //               }
+        //         );
 
-                this.hideMenu();
-             }
-        });
+        //         this.hideMenu();
+        //      }
+        // });
 
-        this.newsActive = this.newsActive && this.isNewsStorageExpired();
+        // this.newsActive = this.newsActive && this.isNewsStorageExpired();
     }
 
     onMenuButtonClick() {

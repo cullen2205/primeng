@@ -209,6 +209,9 @@ declare let gtag: Function;
                 <div class="menu-items">
                     <a [routerLink]=" ['/fileupload']" routerLinkActive="router-link-exact-active">Upload</a>
                 </div>
+                <div class="menu-items">
+                    <a [routerLink]=" ['/fileuploadui']" routerLinkActive="router-link-exact-active">Upload UI</a>
+                </div>
 
                 <div class="menu-category">Menu</div>
                 <div class="menu-items">

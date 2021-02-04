@@ -1,4 +1,4 @@
-<div class="layout-wrapper" [ngClass]="{'layout-news-active': newsActive, 
+<!-- <div class="layout-wrapper" [ngClass]="{'layout-news-active': newsActive,
             'p-input-filled': config.inputStyle === 'filled', 'p-ripple-disabled': !config.ripple}">
     <app-news *ngIf="newsActive" (onNewsHide)="hideNews()"></app-news>
     <app-topbar (menuButtonClick)="onMenuButtonClick()"></app-topbar>
@@ -10,4 +10,7 @@
         <router-outlet></router-outlet>
         <app-footer></app-footer>
     </div>
-</div>
+</div> -->
+
+
+<router-outlet></router-outlet>
